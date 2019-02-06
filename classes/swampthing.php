@@ -3,7 +3,7 @@ class Swampthing extends Monster
 {
     private static $_smell;
 
-    function __construct($name, $smell)
+    function __construct($name = 'steve', $smell = 'very nice')
     {
         parent::__construct($name);
         parent::setName($name);
