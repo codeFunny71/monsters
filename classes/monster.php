@@ -3,7 +3,7 @@ class Monster
 {
     private $_name;
 
-    function Monster($name = "Vlad")
+    function __construct($name = "Vlad")
     {
         $this->_name = $name;
     }

@@ -1,21 +1,22 @@
 <?php
 class Vampire extends Monster
 {
-    private $_victims;
+    private static $_victims;
 
-    function Vampire($name)
+    function __construct($name)
     {
-        //parent::Monster($name);
+        parent::__construct($name);
         parent::setName($name);
-        $this->_victims = 0;
+
+        self::$_victims = 0;
     }
     function attack()
     {
         echo "Another has fallen victim to " . $this->getName() . " the vampire";
-        $this->_victims++;
+        self::$_victims++;
     }
     function getVictims()
     {
-        return $this->_victims;
+        return self::$_victims;
     }
 }
