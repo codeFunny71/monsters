@@ -7,10 +7,23 @@
  */
 
 require_once 'vendor/autoload.php';
+
+
 $f3 = Base::instance();
+
+
 $f3->route('GET /',
-    function() {
-        echo 'Hello, world!';
+    function($f3) {
+        $monster = new Monster('bob');
+        $vampire = new Vampire('tom');
+        $swampy = new Swampthing('fred');
+        $swampy->setSmell('old person funk');
+
+        echo $monster->attack();
+        echo $vampire->attack();
+        echo $swampy->attack();
+        echo $swampy->getSmell();
+
         $template = new Template();
         echo $template->render('views/home.html');
     }
