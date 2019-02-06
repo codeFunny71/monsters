@@ -3,7 +3,7 @@ class Vampire extends Monster
 {
     private static $_victims;
 
-    function __construct($name)
+    function __construct($name = "bill")
     {
         parent::__construct($name);
         parent::setName($name);
