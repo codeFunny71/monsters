@@ -12,7 +12,7 @@ class Vampire extends Monster
     }
     function attack()
     {
-        echo "Another has fallen victim to " . $this->getName() . " the vampire";
+        echo "Another has fallen victim to " . $this->getName() . " the vampire <br>";
         self::$_victims++;
     }
     function getVictims()

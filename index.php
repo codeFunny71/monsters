@@ -17,7 +17,7 @@ $f3->route('GET /',
         $monster = new Monster('bob');
         $vampire = new Vampire('tom');
         $swampy = new Swampthing('fred');
-        $swampy->setSmell('old person funk');
+        $swampy->setSmell('Really bad smell');
 
         echo $monster->attack();
         echo $vampire->attack();

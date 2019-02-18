@@ -12,7 +12,7 @@ class Swampthing extends Monster
     }
     function attack()
     {
-        echo "Gurgle gurgle blub";
+        echo "Gurgle gurgle blub <br>";
     }
     function setSmell($var)
     {
